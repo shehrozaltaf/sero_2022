@@ -1,0 +1,157 @@
+
+.text-mycolor1 {
+    color: #a9b400;
+}
+
+.text-mycolor2 {
+    color: #ae5a79;
+}
+
+.text-mycolor3 {
+    color: #e7eef7;
+}
+
+.progress-bar-mycolor1 .progress-bar, .btn-mycolor1 {
+    background-color: #a9b400;
+}
+
+.progress-bar-mycolor2 .progress-bar, .btn-mycolor2 {
+    background-color: #ae5a79;
+}
+
+.progress-bar-mycolor3 .progress-bar, .btn-mycolor3 {
+    background-color: #e7eef7;
+}
+
+.mygreen {
+    background: green;
+}
+
+.myred {
+    background: red;
+}
+
+.myorange {
+    background: orange;
+}
+
+.mynote {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
+.image_form_table th, .image_form_table td {
+    line-height: 6;
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+}
+
+.click1 {
+    color: green;
+}
+
+.click2 {
+    color: red;
+}
+
+.click3 {
+    color: orange;
+}
+
+.error {
+    border-color: #e53935 !important;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+
+.totalClustersList {
+    /*height: 380px;*/
+}
+
+.md-fab-wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: 24px;
+    z-index: 1004;
+    -webkit-transition: margin 280ms cubic-bezier(.4, 0, .2, 1);
+    transition: margin 280ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.md-fab.md-fab-accent {
+    background: #5d55c7;
+    border-radius: 25%;
+}
+
+.md-fab.md-fab-accent > i {
+    color: #fff;
+}
+
+.md-fab > i {
+    font-size: 36px;
+    line-height: 64px;
+    height: inherit;
+    width: inherit;
+    /*position: absolute;*/
+    left: 0;
+    top: 0;
+    color: #727272;
+}
+
+.hide {
+    display: none;
+}
+
+
+td.details-control {
+    background: url(https://datatables.net/examples/resources/details_open.png) no-repeat center center;
+    cursor: pointer;
+}
+
+tr.details td.details-control {
+    background: url(https://datatables.net/examples/resources/details_close.png) no-repeat center center;
+}
+
+.customlabel {
+    line-height: 1.25;
+    padding: 0.7rem 0;
+}
+
+.invalidVal {
+    border-bottom: 1px solid red !important;
+}
+
+.myTable th, .myTable td {
+    padding: 2px 5px !important;
+}
+
+.myTable th select  {
+    border: 1px solid black;
+}
+
+.myTable th .select_error {
+    border: 1px solid #e53935;
+}
+
+.requried_label{
+    color: red;
+}
+
+
+div.dt-button-collection .dt-button {
+    border-radius: 0;
+    background: #ececec;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+#tblaudit th, #tblaudit td {
+    width: 10%;
+}
+
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+    font-size: 12px;
+}
