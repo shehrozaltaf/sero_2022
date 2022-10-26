@@ -136,7 +136,8 @@ ORDER BY $orderQ";
 (select count(distinct hhid) from forms where  ebCode = c.cluster_no AND (forms.colflag is null OR forms.colflag = '0')  and istatus=4 ) as refused_forms,  
 (select count(distinct hhid) from forms where  ebCode = c.cluster_no AND (forms.colflag is null OR forms.colflag = '0')  and istatus in (2,3,5,6,96)) as remaining_forms,
 (select count(distinct hhid) from Children where  ebCode = c.cluster_no AND (Children.colflag is null OR Children.colflag = '0')  and g01=1 and trueageinmonths between 6 and 11) as child_6_11months,  
-(select count(distinct hhid) from Children where  ebCode = c.cluster_no AND (Children.colflag is null OR Children.colflag = '0')  and g01=1 and trueageinmonths between 12 and 23) as child_12_23months  
+(select count(distinct hhid) from Children where  ebCode = c.cluster_no AND (Children.colflag is null OR Children.colflag = '0')  and g01=1 and trueageinmonths between 12 and 23) as child_12_23months,  
+(select count(  g01) from Children where  ebCode = c.cluster_no AND (Children.colflag is null OR Children.colflag = '0')  and g01=1 ) as sample_taken  
 from clusters c 
 $sysdate_join 
 where     (c.colflag is null OR c.colflag = '0')  

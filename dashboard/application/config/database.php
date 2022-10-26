@@ -75,8 +75,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
     'dsn' => '',
-    'hostname' => 'cls-pae-fp51764',
-//    'hostname' => 'vcoe1',
+//    'hostname' => 'cls-pae-fp51764',
+    'hostname' => 'vcoe1',
     'username' => 'app',
     'password' => 'abcd1234',
     'database' => 'sero_2022',

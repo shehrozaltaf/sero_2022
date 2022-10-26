@@ -46,6 +46,7 @@
                                                 <th>Others</th>
                                                 <th>Children 6-11</th>
                                                 <th>Children 12-23</th>
+                                                <th>Sample Taken</th>
                                                 <th>Cluster Status</th>
                                             </tr>
                                             </thead>
@@ -64,7 +65,7 @@
                                                     if ($r->randomized_households > 0) {
                                                         if ($r->one_child == 0) {
                                                             $status = '<span class="label btn btn-sm btn-info">Pending</span>';
-                                                        } else if ($r->collected_forms>=18 ) {
+                                                        } else if ($r->collected_forms>=18 && $r->sample_taken>=18 ) {
                                                             $status = '<span class="label btn btn-sm btn-success">Completed</span>';
                                                         } else {
                                                             $status = '<span class="label btn btn-sm btn-primary">In Progress</span>';
@@ -112,6 +113,7 @@
                                                         <td><?php echo $r->remaining_forms; ?></td>
                                                         <td><?php echo $r->child_6_11months; ?></td>
                                                         <td><?php echo $r->child_12_23months; ?></td>
+                                                        <td><?php echo $r->sample_taken; ?></td>
                                                         <td><?php echo $status; ?></td>
                                                     </tr>
                                                 <?php }
@@ -130,6 +132,7 @@
                                                 <th>Others</th>
                                                 <th>Children 6-11</th>
                                                 <th>Children 12-23</th>
+                                                <th>Sample Taken</th>
                                                 <th>Cluster Status</th>
                                             </tr>
                                             </tfoot>
